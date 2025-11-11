@@ -1,4 +1,11 @@
-let createGrid = function(x, y) {
+let black = document.querySelector(".blackBtn");
+let red = document.querySelector(".redBtn");
+let green = document.querySelector(".greenBtn");
+let purple = document.querySelector(".purpleBtn");
+let erase = document.querySelector(".eraseBtn");
+
+
+function createGrid(x, y) {
     let i = x * y
     while (i > 0) {
         let square = document.createElement("div");
@@ -10,11 +17,36 @@ let createGrid = function(x, y) {
 
         i--;
 
+        let colour = "";
+
+        black.addEventListener("click", () => {
+            colour = "black";
+        })
+        
+        red.addEventListener("click", () => {
+            colour = "red";
+        })
+
+        green.addEventListener("click", () => {
+            colour = "green";
+        })
+
+        purple.addEventListener("click", () => {
+            colour = "purple";
+        })
+
+        erase.addEventListener("click", () => {
+            colour = "";
+        })
+
         square.addEventListener("mouseover", (event) => {
-            event.target.style.backgroundColor = "orange";
+            event.target.style.backgroundColor = colour;
         })
     }    
 }
 
 createGrid(16, 16);
+
+
+
 
