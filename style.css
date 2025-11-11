@@ -1,0 +1,15 @@
+.sketchpad {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+}
+
+div {
+    border-style: solid;
+    border-color: rgb(239, 3, 3);
+    border-width: thin;
+}
