@@ -1,15 +1,167 @@
+body {
+    background-color: rgb(242, 105, 167);
+}
+
+.console {
+    background-color: rgb(214, 16, 16);
+    border-style: solid;
+    border-color: rgb(151, 23, 23);
+    border-width: thick;
+    width: 1000px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto;
+    border-radius: 20px;
+
+}
+
+.logo {
+    height: 60px;
+    width: 250px;
+    border-radius: 100%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(214, 16, 16);
+    margin: 50px auto;
+    border-style: solid;
+    border-color: orange;
+    border-width: thick;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .sketchpad {
     display: flex;
     flex-wrap: wrap;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 400px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(214, 214, 214);
+    border-width: thick;
+    outline: 20px solid rgb(20, 20, 20);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.sketchpad div {
+    border-style: solid;
+    border-color: rgb(214, 214, 214);
     border-width: thin;
 }
 
-div {
+.game {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.colours {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
     border-style: solid;
-    border-color: red;
+    border-width: medium;
+    border-color: rgb(255, 166, 0);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.colours button {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 10px 0px;
+}
+
+.blackBtn {
+    background-color: rgb(11, 11, 11);
+    border-style: solid;
+    border-width: medium;
+    border-color: black;
+}
+
+.redBtn {
+    background-color: red;
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(147, 0, 0);
+}
+
+.greenBtn {
+    background-color: green;
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(0, 75, 0);
+}
+
+.purpleBtn {
+    background-color: purple;
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(77, 0, 77);
+}
+
+.eraseBtn {
+    background-color: white;
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(169, 108, 10);
+    color: rgb(169, 108, 10);
+    text-align: center;
+    font-size: 10px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(72, 135, 72);
+    border-style: solid;
+    border-width: medium;
+    border-color:  rgb(39, 68, 39);
+    border-radius: 10px;
+    padding: 10px;
+    width: 50px;
+    height: 350px;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.resetBtn {
+    background-color: rgb(214, 16, 16);
+    border-style: solid;
+    border-color: rgb(151, 23, 23);
     border-width: thin;
+    border-radius: 10px;
+    color: white;
+    padding: 20px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+input {
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    color: orange;
+    margin: 0px 2px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: orange;
 }

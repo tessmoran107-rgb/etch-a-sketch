@@ -3,6 +3,7 @@ let red = document.querySelector(".redBtn");
 let green = document.querySelector(".greenBtn");
 let purple = document.querySelector(".purpleBtn");
 let erase = document.querySelector(".eraseBtn");
+let reset = document.querySelector(".resetBtn");
 
 
 function createGrid(x, y) {
@@ -10,8 +11,8 @@ function createGrid(x, y) {
     while (i > 0) {
         let square = document.createElement("div");
         document.querySelector(".sketchpad").appendChild(square);
-        let width = ((500 - (2 * x)) / x)
-        let height = ((500 - (2 * y)) / y)
+        let width = ((600 - (2 * x)) / x)
+        let height = ((400 - (2 * y)) / y)
         square.style.width = width + "px";
         square.style.height = height + "px";
 
@@ -46,6 +47,8 @@ function createGrid(x, y) {
 }
 
 createGrid(16, 16);
+
+
 
 
 

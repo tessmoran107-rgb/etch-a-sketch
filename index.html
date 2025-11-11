@@ -10,12 +10,28 @@
 </head>
 
 <body>
-    <div class="sketchpad"></div>
-    <div class="colours">
-        <button class = "blackBtn">Black</button>
-        <button class = "redBtn">Red</button>
-        <button class = "greenBtn">Green</button>
-        <button class = "purpleBtn">Purple</button>
-        <button class = "eraseBtn">Erase</button>
+    <div class = "console">
+        <div class = "logo">ETCH★A★SKETCH</div>
+        <div class = "game">
+            <div class = "colours">
+                <button class = "blackBtn"></button>
+                <button class = "redBtn"></button>
+                <button class = "greenBtn"></button>
+                <button class = "purpleBtn"></button>
+                <button class = "eraseBtn">ERASE</button>
+            </div>
+            <div class = "sketchpad"></div>
+            <div class = "settings">
+                <div class = "grid-size">
+                    <p>GRID SIZE</p>
+                    <div class = "input">
+                        <input type="text" id="width" value="16"><br>
+                        <p>x</p>
+                        <input type="text" id="height" value="16"><br>
+                    </div>
+                </div>
+                <button class ="resetBtn">RESET</button>
+            </div>
+        </div>
     </div>
 </body>
