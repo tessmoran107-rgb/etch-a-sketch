@@ -165,3 +165,16 @@ input {
     border-style: solid;
     border-color: orange;
 }
+
+.refreshBtn {
+    background-color: rgb(225, 135, 0);
+    color: white;
+    border-style: solid;
+    border-width: thin;
+    border-color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 10px;
+    margin: 5px;
+    padding: 5px;
+}
